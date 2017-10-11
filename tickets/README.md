@@ -16,12 +16,13 @@
 
       - 使用chrome的开发者工具，发送网页查询请求，在开发者工具Network拦过滤出类型为xhr的请求，形如https://kyfw.12306.cn/otn/leftTicket/queryX?leftTicketDTO.train_date=2017-10-25&leftTicketDTO.from_station=IOQ&leftTicketDTO.to_station=FZS&purpose_codes=ADULT
 
-      - 输入进去的是中文地名，需要转换为对应的英文地名；地名对应关系，在这个js中指定https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9027（可查询当前网页，看最新import进去的js路径），可通过tickets.py中的transferStation函数生成stations.py
+      - 输入进去的是中文地名，需要转换为对应的英文地名；地名对应关系，在这个js中指定https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9027
+      （可查询当前网页，看最新import进去的js路径），可通过tickets.py中的transferStation函数生成stations.py
 
       - r.json()['data']['result']返回的是一个列表，每个车
       次是一个长字符串，中间用‘|’分隔。
 
-4. 参考链接：
+4. 参考链接
 
       - https://www.shiyanlou.com/courses/623
       - http://www.jianshu.com/p/1b755b0bbebf
