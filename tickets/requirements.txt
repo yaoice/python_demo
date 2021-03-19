@@ -6,7 +6,7 @@ chardet==3.0.4
 colorama==0.3.9
 docopt==0.6.2
 idna==2.6
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 multidict==3.2.0
 prettytable==0.7.2
